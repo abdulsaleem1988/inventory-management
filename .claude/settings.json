@@ -1,0 +1,10 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(Get-ChildItem -Recurse -Force)",
+      "Bash(Select-Object FullName)",
+      "Bash(cd \"/c/Users/abdul.basha/Downloads/Basecamp-Exercises-main/Basecamp-Exercises-main/day1/01_inventory-management\" && ls -la)",
+      "Read(//c/c/Users/abdul.basha/Downloads/Basecamp-Exercises-main/Basecamp-Exercises-main/day1/**)"
+    ]
+  }
+}

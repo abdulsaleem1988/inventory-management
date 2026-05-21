@@ -1,0 +1,27 @@
+{
+  "env": {},
+  "permissions": {
+    "allow": [
+      "Bash(curl -s http://localhost:8001/docs)",
+      "Bash(curl -s http://localhost:3000)",
+      "PowerShell(Start-Process \"http://localhost:3000\")",
+      "PowerShell(Start-Process \"http://localhost:8001/docs\")",
+      "PowerShell(Get-ChildItem -Path \"c:\\\\Users\\\\abdul.basha\\\\Downloads\\\\Basecamp-Exercises-main\\\\Basecamp-Exercises-main\\\\day1\\\\01_inventory-management\" -Recurse -Directory | Select-Object -First 30 | ForEach-Object { $_.FullName } | Sort-Object)",
+      "PowerShell(Start-Process $filePath)",
+      "PowerShell($filePath = \"c:\\\\Users\\\\abdul.basha\\\\Downloads\\\\Basecamp-Exercises-main\\\\Basecamp-Exercises-main\\\\day1\\\\01_inventory-management\\\\ARCHITECTURE.html\")",
+      "PowerShell(\"Architecture page opened in browser\")",
+      "Bash(netstat -aon)",
+      "Bash(findstr \":3000\\\\|:8001\")",
+      "mcp__playwright__browser_navigate",
+      "mcp__playwright__browser_wait_for",
+      "mcp__playwright__browser_click",
+      "mcp__playwright__browser_take_screenshot",
+      "PowerShell(Get-Process | Where-Object { $_.ProcessName -match \"node|python\" } | Select-Object ProcessName, Id, @{Name=\"Port\";Expression={\"checking\"}} | Format-Table)",
+      "mcp__playwright__browser_close",
+      "mcp__playwright__browser_snapshot",
+      "Skill(update-config)",
+      "Skill(update-config:*)",
+      "mcp__github__get_file_contents"
+    ]
+  }
+}

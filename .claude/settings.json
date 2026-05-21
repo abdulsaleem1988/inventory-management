@@ -6,5 +6,18 @@
       "Bash(cd \"/c/Users/abdul.basha/Downloads/Basecamp-Exercises-main/Basecamp-Exercises-main/day1/01_inventory-management\" && ls -la)",
       "Read(//c/c/Users/abdul.basha/Downloads/Basecamp-Exercises-main/Basecamp-Exercises-main/day1/**)"
     ]
+  },
+  "hooks": {
+    "PostToolUse": [
+      {
+        "matcher": "Edit|Write",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "npx prettier --write \"$CLAUDE_FILE_PATH\" 2>/dev/null || true"
+          }
+        ]
+      }
+    ]
   }
 }
